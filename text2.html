@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Date 对象  js 内置的对象
+        // 对象的使用
+        var obj = {
+            name: '张三',
+            age: 14,
+            say: function (){
+                alert('你好')
+            }
+        }
+        // 获取对象属性 对象.XXX  静态的  小狗的颜色 身高 体重
+        // 调佣对象的方法 对象.XX() 小狗跑 小狗跳
+        console.log(obj.name);
+        console.log(obj.age);
+        // obj.say();
+
+        // 创建了构造函数(Date)的一个实例对象
+        var date = new Date()
+        console.log(date)
+        // console.log(new Date())
+        // date 实例对象 具有很多方法和属性
+        var year = date.getFullYear();
+        var month = date.getMonth()+1;
+        var day = date.getDate();
+        var weekday = date.getDay(); 
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var second = date.getSeconds();
+        var milliSecond = date.getMilliseconds();
+        console.log(year);
+        console.log(month);
+        console.log(day);
+        console.log(weekday);
+        console.log(hour);
+        console.log(min);
+        console.log(second);
+        console.log(milliSecond);
+
+        // 2019-6-5 9:43:24
+        // 常规操作
+        var timeStr = year + '-' +  month + '-' + day + ' '+ hour + ':' + min + ':' +milliSecond 
+         console.log(timeStr);
+         
+        //  时间戳
+        var stamp = date.getTime();
+        // 当前时间距离1970年0时0分0秒的毫秒数
+        console.log(stamp);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

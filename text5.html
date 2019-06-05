@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- --if 语句  条件判断语句 -->
+    <script>
+        //   if....else
+        // 如果符合条件  就做.... else(否则)(不符合条件)....
+        
+        // if 后面的括号（条件表达式） 存在隐式转换，返回的事true
+        // 或者 false 具有boolean的功能
+        // if （条件表达式）{
+        //     条件为真的时候做的事情
+        // }else{
+        //     条件为假的时候做的事情
+        // }
+    
+        // 用户输入自己的考试成绩 提示用户是否及格 如果及格了 弹出警告框
+        // “恭喜，你及格了，不要骄傲啊”如果没有及格那么弹出警告框“很遗憾，
+        // 你没有及格“最后弹出”么么哒“
+          var cj = Number(prompt('请输入你的成绩'));
+          if(cj>=60){
+              alert('恭喜,你及格了,不要骄傲啊')
+          } else{
+              alert('很遗憾,你没有及格,继续努力')
+          }   
+          alert('么么哒');
+    
+    </script>
+</body>
+</html>
